@@ -1,7 +1,5 @@
-<div class="container mt-5">
-
-    <link rel="stylesheet" href="../css/formulario.css">
-
+<!-- En tu vista de formulario -->
+<div class="container mt-5" ng-controller="FormController">
     <form id="infoForm" ng-submit="submitForm()">
         <div class="form-group">
             <label for="tipoIdentificacion">Obtener información de Tipo de
@@ -11,7 +9,6 @@
                 <option value>Selecciona...</option>
                 <option value="cedula">Cédula</option>
                 <option value="pasaporte">Pasaporte</option>
-
             </select>
         </div>
 

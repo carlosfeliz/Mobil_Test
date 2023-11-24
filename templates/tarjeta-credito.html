@@ -1,16 +1,12 @@
-<!-- templates/tarjeta-credito.html -->
 <div class="container mt-4">
     <link rel="stylesheet" href="css/tarjeta.css">
-    
 
     <h2>Tarjeta de Crédito</h2>
 
-    <!-- Tarjeta -->
     <div class="card card-details">
         <img src="img/descarga (2).jpeg" alt="Tarjeta de Crédito"
             class="card-image img-fluid">
 
-        <!-- Costo de emisión -->
         <div class="cost-details">
             <div class="cost-item">
                 <img src="img/signo-de-dolar.png"
@@ -18,7 +14,6 @@
                 <p><strong>Costo de Emisión:</strong> $5,000.00</p>
             </div>
 
-            <!-- Costo de plástico adicional -->
             <div class="cost-item">
                 <img src="img/signo-de-dolar.png"
                     alt="Ícono de tarjeta de crédito">
@@ -26,7 +21,6 @@
             </div>
         </div>
 
-        <!-- Beneficios como carrusel -->
         <div id="beneficiosCarousel" class="carousel slide benefits-carousel"
             data-ride="carousel">
             <div class="carousel-inner">
@@ -71,7 +65,6 @@
 
         </div>
 
-        <!-- Productos relacionados -->
         <div class="related-products">
             <h4>Productos Relacionados:</h4>
             <div class="tarjeta-card">
@@ -94,7 +87,6 @@
             </div>
         </div>
 
-        <!-- Botones -->
         <div class="buttons-container">
             <button class="btn btn-primary" id="solicitudButton">Realizar
                 Solicitud</button>
@@ -106,19 +98,14 @@
 <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
 <script>
     $(document).ready(function () {
-        // Manejar clic en el botón "Realizar Solicitud"
         $('#solicitudButton').click(function () {
-            // Redireccionar a la vista de formulario
             window.location.href = './templates/formulario.html';
         });
 
-        // Manejar clic en el botón "Cerrar"
         $('#cerrarButton').click(function () {
-            // Redireccionar a la vista principal
             window.location.href = './index.html';
         });
 
-        // Inicializar el carrusel
         $('#beneficiosCarousel').carousel({
             interval: 5000
         });

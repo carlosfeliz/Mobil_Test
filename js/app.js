@@ -40,11 +40,11 @@ smartBankingApp.config(function ($routeProvider) {
 });
 
 
-require('./js/controllers/MainController');
-require('./js/controllers/CuentaAhorroController');
-require('./js/controllers/CuentaCorrienteController');
-require('./js/controllers/TarjetaCreditoController');
-require('./js/controllers/PrestamosController');
-require('./js/controllers/CertificadosController');
-require('./js/controllers/SolicitudesController');
-require('./js/controllers/FormController');
+// require('./js/controllers/MainController');
+// require('./js/controllers/CuentaAhorroController');
+// require('./js/controllers/CuentaCorrienteController');
+// require('./js/controllers/TarjetaCreditoController');
+// require('./js/controllers/PrestamosController');
+// require('./js/controllers/CertificadosController');
+// require('./js/controllers/SolicitudesController');
+// require('./js/controllers/FormController');
