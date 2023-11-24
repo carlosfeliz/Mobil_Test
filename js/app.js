@@ -36,6 +36,11 @@ smartBankingApp.config(function ($routeProvider) {
             templateUrl: 'templates/formulario.html',
             controller: 'FormController'
         })
+
+         .when('/firmas', {
+            templateUrl: 'templates/firmas.html',
+            controller: 'FirmasController'
+        })
         .otherwise({ redirectTo: '/main' });
 });
 

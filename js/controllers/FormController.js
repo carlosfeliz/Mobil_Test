@@ -1,10 +1,11 @@
-// En tu controlador de AngularJS
-app.controller('FormController', function ($scope, $http, $window) {
-    $scope.formData = {}; // Datos del formulario
+app.controller('TuControlador', function ($scope) {
+    
 
     $scope.submitForm = function () {
-        // Guardar datos en un archivo JSON (simulado por ahora)
-        var jsonData = {
+        // Validar los datos del formulario 
+
+        // Crear un objeto con los datos
+        var solicitud = {
             tipoIdentificacion: $scope.formData.tipoIdentificacion,
             numIdentificacion: $scope.formData.numIdentificacion,
             primerNombre: $scope.formData.primerNombre,
@@ -13,23 +14,15 @@ app.controller('FormController', function ($scope, $http, $window) {
             segundoApellido: $scope.formData.segundoApellido
         };
 
-        // Aquí deberías realizar una petición HTTP para guardar los datos en tu backend
-        // Pero por ahora, solo mostraremos un alert simulado y redireccionaremos a la vista de firmas
-        alert("Solicitud realizada correctamente");
+        // Obtener datos almacenados localmente (si los hay)
+        var solicitudesGuardadas = JSON.parse(localStorage.getItem('solicitudes')) || [];
 
-        // Redireccionar a la vista de firmas
-        $window.location.href = '#/firmas'; // Ajusta la URL según tu configuración de enrutamiento
+        // Agregar la nueva solicitud al arreglo
+        solicitudesGuardadas.push(solicitud);
+
+        // Guardar el arreglo actualizado en localStorage
+        localStorage.setItem('solicitudes', JSON.stringify(solicitudesGuardadas));
+
+        $location.path('/firmas');
     };
-});
-
-// Controlador para la vista de firmas
-app.controller('FirmasController', function ($scope, $http) {
-    // Aquí deberías realizar una petición HTTP para obtener los datos del backend
-    // Pero por ahora, simularemos algunos datos
-    $scope.firmasData = [
-        // Datos simulados
-        { nombre: 'Juan', firma: 'Firma de Juan' },
-        { nombre: 'Ana', firma: 'Firma de Ana' },
-        // ... (puedes cargar los datos desde el backend)
-    ];
 });
