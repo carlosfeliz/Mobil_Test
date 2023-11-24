@@ -1,7 +1,9 @@
 
 body {
-    background-color: #206da0; 
-    color: white; 
+    background-color: #206da0;
+        /* Color de fondo principal */
+        color: #495057;
+        /* Color del texto principal */
 }
 
 .container {
