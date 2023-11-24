@@ -1,0 +1,133 @@
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+}
+
+/* Estilos de la tarjeta principal */
+.card {
+    margin: 20px auto;
+    max-width: 600px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+/* Efecto de sombra al pasar el ratón sobre la tarjeta */
+.card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilos de la imagen dentro de la tarjeta */
+.card-image {
+    width: 100%;
+    border-radius: 8px;
+}
+
+/* Detalles de la tarjeta */
+.card-details {
+    padding: 20px;
+    margin-top: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+/* Detalles de costos con iconos */
+.cost-details {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.cost-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.cost-item img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+.benefits-carousel {
+    width: 100%;
+    overflow: hidden;
+    /* Evita que el carrusel se desborde */
+}
+
+.benefits-carousel .carousel-inner {
+    display: flex;
+    flex-direction: row;
+    transition: transform 0.5s ease-in-out;
+    /* Añade una transición suave */
+}
+
+.benefits-carousel .carousel-item {
+    flex: 0 0 auto;
+    width: 100%;
+}
+
+.benefits-carousel img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+.benefits-carousel h5 {
+    margin-bottom: 10px;
+}
+
+.benefits-carousel p {
+    margin-bottom: 20px;
+}
+.custom-card {
+    border: 1px solid #0f0f0f;
+    border-radius: 8px;
+    padding: 10px;
+    margin: 10px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+/* Productos relacionados */
+.related-products {
+    margin-top: 15px;
+    padding: 15px;
+    background-color: #f8f9fa;
+}
+
+.tarjeta-card {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.product {
+    flex: 0 0 calc(33.3333% - 10px);
+    /* Ajusta el tamaño y el margen entre productos */
+    margin-bottom: 15px;
+}
+
+.product img {
+    width: 100%;
+    height: auto;
+    border: 2px solid #dee2e6;
+    border-radius: 8px;
+}
+
+.product p {
+    margin-top: 10px;
+    font-size: 12px;
+    /* Ajusta el tamaño del texto según sea necesario */
+}
+
+/* Contenedor de botones */
+.buttons-container {
+    margin-top: 20px;
+    text-align: center;
+}
+
+/* Estilos para botones */
+.btn {
+    margin: 5px;
+}
